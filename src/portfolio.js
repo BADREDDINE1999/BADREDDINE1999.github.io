@@ -153,26 +153,26 @@ const educationInfo = {
       schoolName: "Mohammed V Preparatory Classes",
       logo: require("./assets/images/cpge_mohamed_v_casablanca_logo.jfif"), // Add your Prep Classes logo
       subHeader: "Maths-Physics (MP) Track",
-     // duration: "September 2018 - June 2020",
-      desc: ["Grade : Top 30% of admitted students at the CNC (MP), Admission to ENSIAS in the Software Engineering program (GL).",
-      "Two years of intensive academic training in mathematics and physics branch (MP) leading me to join ENSIAS.",
-      "Main Courses:",
+      // duration: "September 2018 - June 2020",
+      desc: [
+        "Grade : Top 30% of admitted students at the CNC (MP), Admission to ENSIAS in the Software Engineering program (GL).",
+        "Two years of intensive academic training in mathematics and physics branch (MP) leading me to join ENSIAS.",
+        "Main Courses:"
+      ],
 
-    ],
-
-    descBullets: [
-      " Mathematics: Linear Algebra, Calculus, Geometry, Discrete Mathematics, Logic..",
-      " Physics: Mechanics, Optics, Thermodynamics, Electrostatics, Electromagnetic, Quantum, Chemistry..",
-      " Computer Science: Python, SQL..",
-      "Engineering Science",
-      " Philosophy",
-     ]
+      descBullets: [
+        " Mathematics: Linear Algebra, Calculus, Geometry, Discrete Mathematics, Logic..",
+        " Physics: Mechanics, Optics, Thermodynamics, Electrostatics, Electromagnetic, Quantum, Chemistry..",
+        " Computer Science: Python, SQL..",
+        "Engineering Science",
+        " Philosophy"
+      ]
     },
     {
       schoolName: "Errazi High School",
       logo: require("./assets/images/ERRAZI.jfif"), // Add your High School logo
       subHeader: "Mathematical Sciences B",
-     // duration: "September 2015 - June 2018",
+      // duration: "September 2015 - June 2018",
       desc: "Completed high school with a focus on mathematical sciences.",
       descBullets: []
     }
@@ -225,7 +225,7 @@ const workExperiences = {
       desc: "Designed and developed a web application for customer visit management using SCRUM methodology.",
       descBullets: [
         "Implemented the application using Laravel for the backend and VueJS for the frontend.",
-        "Managed the database with MySQL and utilized Git and GitHub for version control.",
+        "Managed the database with MySQL and utilized Git and GitHub for version control."
       ]
     },
     {
@@ -241,13 +241,14 @@ const workExperiences = {
     },
     {
       role: "Software Engineer Intern",
-      company: "Ministry of National Territory Planning, Urban Planning, Housing and City Policy",
+      company:
+        "Ministry of National Territory Planning, Urban Planning, Housing and City Policy",
       companylogo: require("./assets/images/Logo-Ministere.png"), // Add Ministry logo
       date: "July 2021 – August 2021",
       desc: "Designed and developed a leave management web application using SCRUM methodology.",
       descBullets: [
         "Implemented the application using PHP for the backend and JavaScript with Bootstrap for the frontend.",
-        "Managed the database with MySQL and utilized Git and GitHub for version control.",
+        "Managed the database with MySQL and utilized Git and GitHub for version control."
       ]
     }
   ]
@@ -270,11 +271,10 @@ const bigProjects = {
     {
       image: require("./assets/images/att.PNG"), // Add your project image
       projectName: "Attendance Monitoring and Management System",
-      projectDesc: "A distributed system for monitoring and managing attendance using Spring Boot and Angular.",
+      projectDesc:
+        "A distributed system for monitoring and managing attendance using Spring Boot and Angular.",
       footerLink: [
-       
-       
-       /*
+        /*
         {
           name: "GitHub",
           url: "https://github.com/your-github-username/attendance-system" // Replace with your project URL
@@ -284,16 +284,14 @@ const bigProjects = {
           url: "https://attendance-system-demo.com" // Replace with your live demo URL
         }
         */
-
       ]
     },
     {
       image: require("./assets/images/eventAPP.PNG"), // Add your project image
       projectName: "Sports Event Management System",
-      projectDesc: "A distributed system to manage sports events efficiently using Spring Boot and Angular.",
+      projectDesc:
+        "A distributed system to manage sports events efficiently using Spring Boot and Angular.",
       footerLink: [
-       
-       
         /*
         {
           name: "GitHub",
@@ -308,11 +306,12 @@ const bigProjects = {
       ]
     },
     {
-     image: require("./assets/images/AutoENSIAS.PNG"), // Add your project image
+      image: require("./assets/images/AutoENSIAS.PNG"), // Add your project image
       projectName: "Hitch-Hiking Web System",
-      projectDesc: "Developed a web system for hitch-hiking management using PHP and MySQL.",
+      projectDesc:
+        "Developed a web system for hitch-hiking management using PHP and MySQL.",
       footerLink: [
-      /*
+        /*
         {
           name: "GitHub",
           url: "https://github.com/your-github-username/hitch-hiking-system" // Replace with your project URL
@@ -414,7 +413,8 @@ const talkSection = {
       title: "Building Scalable Web Applications",
       subtitle: "Tech Conference Morocco 2023",
       slides_url: "https://slides.com/your-talk-slides", // Replace with your slides URL
-      event_url: "https://techconference-morocco.com/events/building-scalable-web-apps" // Replace with your event URL
+      event_url:
+        "https://techconference-morocco.com/events/building-scalable-web-apps" // Replace with your event URL
     },
     {
       title: "Data Migration Strategies",
@@ -425,8 +425,6 @@ const talkSection = {
   ],
   display: true // Set false to hide this section, defaults to true
 };
-
-
 
 // Podcast Section
 
@@ -441,16 +439,14 @@ const podcastSection = {
   display: false // Set false to hide this section, defaults to true
 };
 
-
-
-
 // Resume Section
 const resumeSection = {
   title: "Resume",
   subtitle: "Feel free to download my resume",
 
   // Please Provide with Your Resume Link
-  resumeFile: "https://drive.google.com/file/d/1rP2pnoN9j1G6iZz8C_IMAScsXojuIIVG/view?usp=sharing", // Replace with your resume link
+  resumeFile:
+    "https://drive.google.com/file/d/1rP2pnoN9j1G6iZz8C_IMAScsXojuIIVG/view?usp=sharing", // Replace with your resume link
   display: true // Set false to hide this section, defaults to true
 };
 
@@ -491,4 +487,3 @@ export {
   isHireable,
   resumeSection
 };
-
