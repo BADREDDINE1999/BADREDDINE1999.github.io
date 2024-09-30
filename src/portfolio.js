@@ -142,7 +142,7 @@ const educationInfo = {
       schoolName: "ENSIAS",
       logo: require("./assets/images/ENSIAS.jfif"), // Add your ENSIAS logo in assets/images
       subHeader: "State Engineer in Software Engineering",
-      duration: "August 2024 Alumni",
+      duration: "2024 Alumni",
       desc: "Specialized in Software Engineering with a focus on full-stack development, system design, and data management.",
       descBullets: [
         "Completed coursework in Java, Python, C, JavaScript, SQL, and other programming languages.",
