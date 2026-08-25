@@ -1,39 +1,17 @@
-/**
- * Welcome to your Workbox-powered service worker!
- *
- * You'll need to register this file in your web app and you should
- * disable HTTP caching for this file too.
- * See https://goo.gl/nhQhGp
- *
- * The rest of the code is auto-generated. Please don't update this file
- * directly; instead, make changes to your Workbox build configuration
- * and re-run your build process.
- * See https://goo.gl/2aRDsh
- */
-
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
-
-importScripts(
-  "/precache-manifest.c7618e0af8fd84b4274f5c36e4ed2840.js"
-);
-
-self.addEventListener('message', (event) => {
-  if (event.data && event.data.type === 'SKIP_WAITING') {
-    self.skipWaiting();
-  }
+/* Retires the service worker left behind by the previous React build.
+   Returning visitors still have it registered; without this they would keep
+   being served the old cached portfolio. It clears every cache, unregisters
+   itself, then reloads open tabs onto the new site. */
+self.addEventListener('install', function () {
+  self.skipWaiting();
 });
 
-workbox.core.clientsClaim();
-
-/**
- * The workboxSW.precacheAndRoute() method efficiently caches and responds to
- * requests for URLs in the manifest.
- * See https://goo.gl/S9QRab
- */
-self.__precacheManifest = [].concat(self.__precacheManifest || []);
-workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
-
-workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/index.html"), {
-  
-  blacklist: [/^\/_/,/\/[^/?]+\.[^/]+$/],
+self.addEventListener('activate', function (event) {
+  event.waitUntil((async function () {
+    const keys = await caches.keys();
+    await Promise.all(keys.map(function (k) { return caches.delete(k); }));
+    await self.registration.unregister();
+    const clients = await self.clients.matchAll({ type: 'window' });
+    clients.forEach(function (c) { c.navigate(c.url); });
+  })());
 });
