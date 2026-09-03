@@ -315,6 +315,7 @@ a{ color: inherit; }
   letter-spacing:.04em;
   color: var(--ink-2);
 }
+.stats b.word{ font-size: 1.05rem; letter-spacing: 0; padding-block: .26rem 0; }
 @media (max-width: 560px){ .stats{ grid-template-columns: repeat(2, 1fr); } }
 
 /* portrait with drafting registration marks */
@@ -468,6 +469,7 @@ a{ color: inherit; }
   white-space:nowrap; flex:none;
 }
 .card p{ color: var(--ink-2); font-size:.9375rem; flex:1; }
+.card p code{ font-family: var(--f-mono); font-size:.8125rem; color: var(--ink); }
 .card .chips{ margin-top:.15rem; }
 .card-link{
   align-self:flex-start;
@@ -623,7 +625,7 @@ html{ scroll-behavior: smooth; scroll-padding-top: 76px; }
     <div>
       <div class="eyebrow">
         <span class="dot" aria-hidden="true"></span>
-        <span class="label" data-en="Full-Stack Engineer &middot; Morocco">Ingénieur Full-Stack &middot; Maroc</span>
+        <span class="label" data-en="Software Engineer &middot; Morocco">Ingénieur logiciel &middot; Maroc</span>
       </div>
 
       <h1>
@@ -631,8 +633,8 @@ html{ scroll-behavior: smooth; scroll-padding-top: 76px; }
         <em data-en="Software engineering &amp; information systems &mdash; ENSIAS, Rabat.">Ingénierie logicielle &amp; systèmes d’information &mdash; ENSIAS, Rabat.</em>
       </h1>
 
-      <p class="lede" data-en="I design and ship web applications end to end &mdash; from business modelling to containerised deployment. Two years across a digital agency, a retail group and an industrial SME, on Java/Spring Boot, Laravel/VueJS and Python.">
-        Je conçois et livre des applications web de bout en bout &mdash; de la modélisation métier au déploiement conteneurisé. Deux ans d’expérience en agence digitale, en groupe de distribution et en PME industrielle, sur Java/Spring Boot, Laravel/VueJS et Python.
+      <p class="lede" data-en="I design and ship web applications end to end &mdash; from business modelling to containerised deployment. Since 2021, eight roles across a ministry, a digital services firm, industry, retail and a remote team in Dubai &mdash; on Java/Spring Boot, Laravel/VueJS and Python.">
+        Je conçois et livre des applications web de bout en bout &mdash; de la modélisation métier au déploiement conteneurisé. Depuis 2021, huit expériences &mdash; ministère, ESN, industrie, distribution et une équipe à distance à Dubaï &mdash; sur Java/Spring Boot, Laravel/VueJS et Python.
       </p>
 
       <div class="actions">
@@ -655,8 +657,8 @@ html{ scroll-behavior: smooth; scroll-padding-top: 76px; }
       </div>
 
       <div class="stats">
-        <div><b>04</b><span data-en="Companies">Entreprises</span></div>
-        <div><b>08</b><span data-en="Eng. projects">Projets d’ingénierie</span></div>
+        <div><b>08</b><span data-en="Roles">Expériences</span></div>
+        <div><b class="word" data-en="Many">Plusieurs</b><span data-en="Eng. projects">Projets d’ingénierie</span></div>
         <div><b>04</b><span data-en="Certifications">Certifications</span></div>
         <div><b>03</b><span data-en="Languages">Langues</span></div>
       </div>
@@ -679,11 +681,11 @@ html{ scroll-behavior: smooth; scroll-padding-top: 76px; }
     <div class="sec-body">
       <h2 data-en="Comfortable on both sides of the line">À l’aise des deux côtés de la ligne</h2>
       <div class="sec-intro" style="margin-bottom:0">
-        <p data-en="Trained at ENSIAS in Software Engineering &amp; Information Systems, after MP preparatory classes (mathematics and physics) at Lycée Mohammed V in Casablanca. I have worked at SQLI Digital Experience, BRICO NETWORK and READY PRINT on problems ranging from data migration for Thales to building internal business applications, taking in operational IT project tracking and ERP automation on Odoo along the way.">
-          Formé à l’ENSIAS en Ingénierie Logicielle et Systèmes d’Information, après des classes préparatoires MP (mathématiques et physique) au Lycée Mohammed V de Casablanca. J’ai travaillé chez SQLI Digital Experience, BRICO NETWORK et READY PRINT sur des sujets allant de la migration de données pour Thales à la conception d’applications métier internes, en passant par le suivi opérationnel de projets IT et l’automatisation ERP sous Odoo.
+        <p data-en="Trained at ENSIAS in Software Engineering &amp; Information Systems, after MP preparatory classes (mathematics and physics) at Lycée Mohammed V in Casablanca. Since 2021 I have worked for a government ministry, an industrial SME, a digital services firm, a retail network and a remote team in Dubai &mdash; on problems ranging from data migration for Thales to a credit-eligibility chatbot, taking in operational IT project tracking and ERP automation on Odoo along the way.">
+          Formé à l’ENSIAS en Ingénierie Logicielle et Systèmes d’Information, après des classes préparatoires MP (mathématiques et physique) au Lycée Mohammed V de Casablanca. Depuis 2021, j’ai travaillé pour un ministère, une PME industrielle, une ESN, un réseau de distribution et une équipe à distance basée à Dubaï &mdash; sur des sujets allant de la migration de données pour Thales à un chatbot d’évaluation de dossiers de crédit, en passant par le suivi opérationnel de projets IT et l’automatisation ERP sous Odoo.
         </p>
-        <p style="margin-top:1.15rem" data-en="What defines me is that I work on both sides of the line: writing the Spring Boot or Laravel code that runs the product, and keeping the dashboards &mdash; KPIs, workload, risk &mdash; that give stakeholders a clear view of where a project actually stands. Most recently I led the digital and commercial side of YOUNESS SCHOOL in Rabat.">
-          Ce qui me caractérise&nbsp;: je travaille des deux côtés de la ligne &mdash; écrire le code Spring Boot ou Laravel qui fait tourner le produit, et tenir les tableaux de bord (KPI, charges, risques) qui donnent aux parties prenantes une vision claire de l’avancement réel. Plus récemment, j’ai piloté le développement digital et commercial de YOUNESS SCHOOL à Rabat.
+        <p style="margin-top:1.15rem" data-en="What defines me is that I work on both sides of the line: writing the Spring Boot or Laravel code that runs the product, and keeping the dashboards &mdash; KPIs, workload, risk &mdash; that give stakeholders a clear view of where a project actually stands. Most recently I ran digitalisation and AI at READY PRINT, then the digital and commercial side of YOUNESS SCHOOL in Rabat.">
+          Ce qui me caractérise&nbsp;: je travaille des deux côtés de la ligne &mdash; écrire le code Spring Boot ou Laravel qui fait tourner le produit, et tenir les tableaux de bord (KPI, charges, risques) qui donnent aux parties prenantes une vision claire de l’avancement réel. Plus récemment, j’ai piloté la digitalisation et l’IA chez READY PRINT, puis le développement digital et commercial de YOUNESS SCHOOL à Rabat.
         </p>
       </div>
     </div>
@@ -694,8 +696,8 @@ html{ scroll-behavior: smooth; scroll-padding-top: 76px; }
     <div class="sec-label label" data-en="Experience">Parcours</div>
     <div class="sec-body">
       <h2 data-en="Professional experience">Expérience professionnelle</h2>
-      <p class="sec-intro" data-en="Four roles, from a digital services company to a retail network and a print SME &mdash; each one closer to owning a product end to end.">
-        Quatre postes, d’une ESN à un réseau de distribution puis à une PME d’impression &mdash; chacun un peu plus proche de la prise en charge complète d’un produit.
+      <p class="sec-intro" data-en="Eight roles since 2021 &mdash; ministry, digital services, industry, retail, training &mdash; from a first development placement to owning digitalisation and AI.">
+        Huit expériences depuis 2021 &mdash; ministère, ESN, industrie, distribution, formation &mdash; d’un premier stage de développement à la responsabilité de la digitalisation et de l’IA.
       </p>
 
       <div class="tl">
@@ -704,16 +706,17 @@ html{ scroll-behavior: smooth; scroll-padding-top: 76px; }
           <div class="job-head">
             <span class="logo"><img src="data:image/jpeg;base64,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" alt="Youness School"></span>
             <h3>YOUNESS SCHOOL</h3>
-            <span class="when" data-en="May 2026 &mdash; Aug 2026">Mai 2026 &mdash; Août 2026</span>
+            <span class="when" data-en="May 2026 &mdash; Jul 2026">Mai 2026 &mdash; Juillet 2026</span>
           </div>
           <div class="role">
             <span data-en="Head of Digital, Sales &amp; Training">Responsable digital, commercial et formation</span><span class="sep">/</span>Rabat
           </div>
           <ul>
             <li data-en="Built the organisation&rsquo;s digital and commercial systems, in service of training quality and growth in student enrolment.">Développement des solutions digitales et commerciales de l’organisme, au service de la qualité des formations dispensées et de la croissance du nombre d’inscrits.</li>
+            <li data-en="Ran the TIPE project training sessions for enrolled preparatory-class students.">Animation des sessions de formation du projet TIPE pour les étudiants de classes préparatoires inscrits.</li>
           </ul>
           <div class="chips">
-            <span class="chip" data-en="Digital strategy">Stratégie digitale</span><span class="chip" data-en="Sales">Commercial</span><span class="chip" data-en="Training">Formation</span>
+            <span class="chip">Digitalisation</span><span class="chip">Commercial</span><span class="chip">Formation</span><span class="chip">TIPE</span>
           </div>
         </article>
 
@@ -724,14 +727,30 @@ html{ scroll-behavior: smooth; scroll-padding-top: 76px; }
             <span class="when" data-en="Aug 2025 &mdash; Apr 2026">Août 2025 &mdash; Avril 2026</span>
           </div>
           <div class="role">
-            <span data-en="Full-Stack Engineer">Ingénieur Full-Stack</span><span class="sep">/</span>Casablanca
+            <span data-en="Head of Digitalisation &amp; AI">Responsable digitalisation et IA</span><span class="sep">/</span>Casablanca
           </div>
           <ul>
-            <li data-en="Designed and built two business applications: one for managing client visits, one for managing staff leave.">Conception et développement de deux applications métier&nbsp;: la première pour la gestion des visites clients, la seconde pour la gestion des congés.</li>
-            <li data-en="Built a chatbot that triages and evaluates incoming client requests, wired to Twilio for messaging.">Développement d’un chatbot pour l’évaluation des demandes clients, connecté à l’API Twilio pour la messagerie.</li>
+            <li data-en="Built the company&rsquo;s digital and AI systems, for precise tracking of client requests and to grow sales.">Développement des solutions digitales et d’IA de l’entreprise, pour assurer un suivi précis des demandes clients et augmenter les ventes.</li>
           </ul>
           <div class="chips">
-            <span class="chip">PHP</span><span class="chip">Laravel</span><span class="chip">VueJS</span><span class="chip">JavaScript</span><span class="chip">MySQL</span><span class="chip">Bootstrap</span><span class="chip">Node.js</span><span class="chip">Python</span><span class="chip">Flask</span><span class="chip">Twilio API</span><span class="chip">Git</span><span class="chip">Jira</span>
+            <span class="chip">Digitalisation</span><span class="chip">IA</span><span class="chip">Suivi client</span><span class="chip">Ventes</span>
+          </div>
+        </article>
+
+        <article class="job rise">
+          <div class="job-head">
+            <span class="logo mono" aria-hidden="true">FR</span>
+            <h3>Freelance</h3>
+            <span class="when" data-en="Sep 2025 &mdash; Apr 2026 &middot; Sep 2024 &mdash; Apr 2025">Sept. 2025 &mdash; Avril 2026 &middot; Sept. 2024 &mdash; Avril 2025</span>
+          </div>
+          <div class="role">
+            <span data-en="Training Lead">Responsable formation</span><span class="sep">/</span><span data-en="Morocco">Maroc</span>
+          </div>
+          <ul>
+            <li data-en="Delivered varied training sessions for students at a range of levels.">Animation de sessions de formation diversifiées pour des étudiants de différents niveaux.</li>
+          </ul>
+          <div class="chips">
+            <span class="chip">Formation</span><span class="chip">Pédagogie</span>
           </div>
         </article>
 
@@ -742,7 +761,7 @@ html{ scroll-behavior: smooth; scroll-padding-top: 76px; }
             <span class="when" data-en="Apr 2025 &mdash; Aug 2025">Avril 2025 &mdash; Août 2025</span>
           </div>
           <div class="role">
-            <span data-en="Full-Stack Engineer">Ingénieur Full-Stack</span><span class="sep">/</span>Casablanca
+            <span data-en="IS Project Manager">Chargé de la gestion des projets SI</span><span class="sep">/</span>Casablanca
           </div>
           <ul>
             <li data-en="Operational tracking of IT projects: schedules, action follow-up and deliverable control.">Suivi opérationnel des projets IT&nbsp;: gestion des plannings, suivi des actions et contrôle des livrables.</li>
@@ -763,13 +782,64 @@ html{ scroll-behavior: smooth; scroll-padding-top: 76px; }
             <span class="when" data-en="Mar 2024 &mdash; Aug 2024">Mars 2024 &mdash; Août 2024</span>
           </div>
           <div class="role">
-            <span data-en="Full-Stack Engineer">Ingénieur Full-Stack</span><span class="sep">/</span>Rabat
+            <span data-en="IT Developer">Développeur IT</span><span class="sep">/</span>Rabat
           </div>
           <ul>
-            <li data-en="Contributed to a data migration for the client Thales by developing the &ldquo;Thales Migration&rdquo; module for their new site.">Contribution à la migration des données pour le client Thales vers un nouveau site, via le développement du module «&nbsp;Thales Migration&nbsp;».</li>
+            <li data-en="Contributed to a data migration for the client Thales by developing the &ldquo;Thales Migration&rdquo; module for their new site.">Contribution à la migration des données pour le client Thales vers un nouveau site, via le développement du module &laquo;&nbsp;Thales Migration&nbsp;&raquo;.</li>
           </ul>
           <div class="chips">
             <span class="chip">PHP</span><span class="chip">Drupal</span><span class="chip">Linux</span><span class="chip">Bash</span><span class="chip">Docker</span><span class="chip">GitLab</span><span class="chip">Visual Paradigm</span>
+          </div>
+        </article>
+
+        <article class="job rise">
+          <div class="job-head">
+            <span class="logo"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAQDAwMDAgQDAwMEBAQFBgoGBgUFBgwICQcKDgwPDg4MDQ0PERYTDxAVEQ0NExoTFRcYGRkZDxIbHRsYHRYYGRj/2wBDAQQEBAYFBgsGBgsYEA0QGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBj/wAARCABgAGADASIAAhEBAxEB/8QAHAABAAMAAwEBAAAAAAAAAAAAAAUGBwIDCAEE/8QALRAAAQMEAgEDBAIBBQAAAAAAAQIDBAAFBhEHEiEiMUEIExRRIzIzUmFxcqH/xAAZAQEAAwEBAAAAAAAAAAAAAAAAAgMEAQX/xAAsEQABAwQABAQGAwAAAAAAAAABAAIRAwQhMQUSQVEGIoHwExQjUnHxYaGx/9oADAMBAAIRAxEAPwD39SlKIlKUoiUpSiJSlKIlKUoiUpSiJSlKIlKUoiUrqekMxwlT7zbSVLShJWoJ2onQA38k+APmu2iJSlKIlKUoiUpSiJSlVjkW5ZdZ+Lb3c8CsrF5yRiKpdvt8hfVD7vjQPkb8bOtjetbG6Iqjln1D8V4tecoxyTmFpTkdgtq571tkv/Y7kIKktJcUOqnD6fQklQ7jxWH4r9fGK3filu5z8ZkPZu9dE26NidscWtySlak9HEOKRrWlEa9yoAaAOxlPD/Hb31ifUTknKPLNliWu2WcR4Mu02xK2BMkpQU9FqJKwEpTtZ328oSCAK27OcOw3Es0YtXBHFmMs5XjsZVzl3SPb21uQG+ughJVvs8oEkA7OvbydiurVFJvMVrsrKpeVRSpwO5OAB3J6K/5VlEjkaXYsYxuxX2LcY1zjTpct9lcdqClHcq/mSDsq6uNhSQUkg+fbe2j296yng/llrkzDVJuC2m8ggAImtIHUOg/1eSP9KvYj4II/VZxk3OOcYdz7em5yPz8KttwahSWm4yOzAcaCkkLA7dvCyAfB0R76rKLljGisTId7/a9l3CLm4rOsabA11IEwTkyRoxmcQMD1Xp6lVHJeQ8axrjNecvzm5NsLKXYymVAmUVD0IR/ur/zyT7GsBxXmflG6xs1n3p9iEI+NuXu1xxEQAztwBtQJG1p1vXb39/mrat0ym4NOysVnwS5u6T6zQA1pAziTIED8TnsvVlK8/wDCnNN7vuQHC+Ryhm9SG0y7dJLSWUym1pCwnSfG+vqSR7jY9x5lOa+Xbpi86HhWBoTLyybpZ6th38VrRVspPjsoAkb8BIKj8VwXlM0/i9P7nspO4DdtvPkoHNuZ8sfdPb9bW2Uqh8N5Jd8u4UseRX2SmTcJaHFOuobS2FadUkelPgeAKvlaGPD2hw6rzLmg63qvov20kH0MJVH5exDJs64fu+MYhl0nFLxLSgMXWOVBTQC0lSdoIUApIUnYO/NXivh8ipKleEvpEGc4M1zHx9jMGNlcm13FsxL3HfCYT0s7aWFOLI3oBKyBv+ih8gnbLJ9Pma2xuRNj80Xm3T7gsSbgYUYadfI9RKu4KvJOifj4FX6NxdEsDC7bhMtGL2VxT7zlutramg488VFx0rSoKCtlHXX9QgAeDqq7MkzbVabhi55ZjRGtBuRPlIednRFNMIVI6rUvQSoNuKCz/UuKAJKQKz1KLKjpf01mP8Xq2l/XtaRZbRnLvLOtAyCIG8d9rOzwbybxryTbsu4+uKMnd7LVNTIU3DU4FHa0LBVpSVj5B2FDevArS8d47l3DNOS3MxsiBZcmXFUy0t5C1KCWtK31J6qSo+D+xsVXF3iPIgLVK54WpuRFEh1bTDrB9bJYjuMlJBQQ4krdbBPqA2Eb9Us3drdj/KqoE/lFUpuGorXbpj0sKhoQgqV3WlXRYIBVt7Y9PioMs6bDiY3HTUK+58Q3Vy36kc0RzAQ6A4OGjGCMY0qZj3055Kc6YsWW3lU/ALM+uXb45eG5JWd9FIHlHt6vg+Qn+xq15hxzlFy5Czu42q1smDc8RTaYPV5tAW+Ff4+u/SND3OhXORcjeMdSmxcvXpxr8Rt5+dCtL8osNjsvypCdIWSlXYLPfqnrr5PSi6vwrajILly47FYdmFtUxEOT3eW4yXEM/ivdm2wEvNLT1QCQlPnyTXGWdMNiI9wrLjxBdPrCoXB0CMCBsEmMZJGSueW8LS8m4YxhMUotua4/b2ERpCHANrbSCWVLHx2G0q+D59ia7+L+IbnYLRecrzFxNwze8suh11bgX+MFpI6JUPHY+OxHjQCR4HmuIu5kWp9iH9RTzUl5ouLkPQ3OrbaEFO0dtdV917UNnaQfG0dhZMQxLJL62xNPLWQSGWftpdZQ1Ij/AHEKDiuyS8Qo9g4ghWiP4x7g1MWlMPD4z7z+VnPHLs0Db83lJn+YJktn7ZzCt/DOOXjEeELDj1/jJjXGK24l5pLiXAklxSh6kkg+CPar7UVjtsnWnHI0K53eRdpyU9pM14BJecPlRSkeEJ2T1QPCRoVK1dTYGNDR0Xm3Fd1xVfWftxJPrlKUpU1SvhG6jpeP2Oey41NtEGS24v7i0vMJWFK3vZBHnyakqUXQSNKCXhWHuN/bcxezqR94yOhhtkfcKSkr1rXYpUob/Sj+6RsKxCJAXBj4zaW47iQlxoRUaWASoBWx58qJ8/s1O0ouKBawnEGLqLlHxq1MywFD7zUZCFHsCFb0POwpW/8Ak1yXhmJuXMXBzG7UuUG0NB5UZBUEo11Ht8dU6/6gfFTlKIoJWF4ippxpWMWgtuuIeWgxEaUtCu6VEa9wryD8Gv02XG7Bjjb7dhs8K3JkLDjoitBvuoDQJ176HgfoVKUoiUpSiJSlKIlKUoiUpSiJSlKIlKUoiUpSiL//2Q==" alt="Atlantic Machinery Manufacturing"></span>
+            <h3>Atlantic Machinery Manufacturing</h3>
+            <span class="when" data-en="Jul 2022 &mdash; Aug 2022">Juil. 2022 &mdash; Août 2022</span>
+          </div>
+          <div class="role">
+            <span data-en="Full-Stack Developer">Développeur Full-Stack</span><span class="sep">/</span>Settat
+          </div>
+          <ul>
+            <li data-en="Designed and built a web application for managing client visits, working in agile SCRUM.">Conception et développement d’une application web pour la gestion des visites clients, en méthode agile SCRUM.</li>
+          </ul>
+          <div class="chips">
+            <span class="chip">PHP</span><span class="chip">Laravel</span><span class="chip">VueJS</span><span class="chip">MySQL</span><span class="chip">Bootstrap</span><span class="chip">XAMPP</span><span class="chip">Visual Paradigm</span><span class="chip">Jira</span><span class="chip">Git</span>
+          </div>
+        </article>
+
+        <article class="job rise">
+          <div class="job-head">
+            <span class="logo"><img src="data:image/jpeg;base64,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" alt="Lenddoo"></span>
+            <h3>Lenddoo</h3>
+            <span class="when" data-en="Mar 2022 &mdash; Jun 2022">Mars 2022 &mdash; Juin 2022</span>
+          </div>
+          <div class="role">
+            <span data-en="Software Engineer">Ingénieur Logiciel</span><span class="sep">/</span><span data-en="Dubai, UAE &middot; remote">Dubaï, EAU &middot; à distance</span>
+          </div>
+          <ul>
+            <li data-en="Built a chatbot, with a teammate, that assesses the eligibility of credit applications.">Développement, en binôme, d’un chatbot d’évaluation de l’éligibilité des dossiers de crédit.</li>
+          </ul>
+          <div class="chips">
+            <span class="chip">Node.js</span><span class="chip">Python</span><span class="chip">Flask</span><span class="chip">Twilio API</span><span class="chip">MySQL</span><span class="chip">Git</span><span class="chip">Jira</span><span class="chip">Overleaf</span>
+          </div>
+        </article>
+
+        <article class="job rise">
+          <div class="job-head">
+            <span class="logo"><img src="data:image/jpeg;base64,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" alt="Ministère de l’Aménagement du Territoire"></span>
+            <h3>Ministère de l’Aménagement du Territoire</h3>
+            <span class="when" data-en="Jul 2021 &mdash; Aug 2021">Juil. 2021 &mdash; Août 2021</span>
+          </div>
+          <div class="role">
+            <span data-en="Software Engineer">Ingénieur Logiciel</span><span class="sep">/</span>Settat
+          </div>
+          <ul>
+            <li data-en="Designed and built a web application for leave management, working in agile SCRUM.">Conception et développement d’une application web pour la gestion des congés, en méthode agile SCRUM.</li>
+          </ul>
+          <div class="chips">
+            <span class="chip">PHP</span><span class="chip">JavaScript</span><span class="chip">MySQL</span><span class="chip">Bootstrap</span><span class="chip">XAMPP</span><span class="chip">Visual Paradigm</span><span class="chip">Jira</span><span class="chip">Git</span>
           </div>
         </article>
 
@@ -892,6 +962,28 @@ html{ scroll-behavior: smooth; scroll-padding-top: 76px; }
         </article>
 
         <article class="card rise">
+          <div class="card-top">
+            <h3 data-en="SOA &mdash; automated refund management">SOA &mdash; gestion automatisée des remboursements</h3>
+            <span class="dur" data-en="2 months">2 mois</span>
+          </div>
+          <p data-en="A refund management system on a service-oriented architecture: BPMN modelling of the business processes and identification of medium-grained services, then delivery through REST↔GraphQL and REST↔SOAP proxies on MuleSoft, Spring Boot microservices behind a gateway and a Eureka registry, and an Angular front end.">Système de gestion des remboursements en architecture orientée services&nbsp;: modélisation BPMN des processus métier et identification des services de granularité moyenne, puis réalisation avec des proxys REST↔GraphQL et REST↔SOAP sous MuleSoft, des microservices Spring Boot derrière une gateway et un annuaire Eureka, et une interface Angular.</p>
+          <div class="chips">
+            <span class="chip">MuleSoft</span><span class="chip">Spring Boot</span><span class="chip">RabbitMQ</span><span class="chip">PostgreSQL</span><span class="chip">Eureka</span><span class="chip">Spring Cloud Gateway</span><span class="chip">GraphQL</span><span class="chip">SOAP</span><span class="chip">Angular</span><span class="chip">Docker</span><span class="chip">SoapUI</span><span class="chip">Postman</span>
+          </div>
+        </article>
+
+        <article class="card rise">
+          <div class="card-top">
+            <h3 data-en="Oracle database performance tuning">Optimisation des performances d’une base Oracle</h3>
+            <span class="dur" data-en="2 months">2 mois</span>
+          </div>
+          <p data-en="Analysed Oracle&rsquo;s memory structures and processes to locate contention points. PL/SQL scripts computed the critical ratios (SGA, Shared Pool, Redo Log Buffer) from the dynamic views <code>v$sysstat</code>, <code>v$librarycache</code> and <code>v$rowcache</code>; memory parameters (<code>DB_CACHE_SIZE</code>, <code>SHARED_POOL_SIZE</code>, <code>LOG_BUFFER</code>) were then tuned until the cache ratio reached R &ge; 70%. Monitoring was automated through SQL scripts and dashboards.">Analyse des structures mémoire et des processus Oracle pour localiser les points de contention. Scripts PL/SQL calculant les ratios critiques (SGA, Shared Pool, Buffer Redo Log) à partir des vues dynamiques <code>v$sysstat</code>, <code>v$librarycache</code> et <code>v$rowcache</code>, puis réglage des paramètres mémoire (<code>DB_CACHE_SIZE</code>, <code>SHARED_POOL_SIZE</code>, <code>LOG_BUFFER</code>) jusqu’à un ratio de cache R &ge; 70&nbsp;%. Surveillance automatisée par scripts SQL et tableaux de bord.</p>
+          <div class="chips">
+            <span class="chip">Oracle</span><span class="chip">PL/SQL</span><span class="chip">Tuning mémoire</span><span class="chip">Vues dynamiques</span><span class="chip">Monitoring</span>
+          </div>
+        </article>
+
+        <article class="card rise">
           <svg class="plate" viewBox="0 0 560 280" role="img" aria-label="BPMN">
 <rect width="560" height="280" fill="var(--surface-2)"/>
 <defs><marker id="bpa" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 L7 3.5 L0 7 z" fill="var(--ink)"/></marker></defs>
@@ -942,6 +1034,102 @@ html{ scroll-behavior: smooth; scroll-padding-top: 76px; }
           </p>
           <div class="chips">
             <span class="chip">Oracle</span><span class="chip">SQL Server</span><span class="chip">MySQL</span><span class="chip">MariaDB</span><span class="chip">PostgreSQL</span>
+          </div>
+        </article>
+
+        <article class="card rise">
+          <div class="card-top">
+            <h3 data-en="HOBY language compiler">Compilateur du langage HOBY</h3>
+            <span class="dur" data-en="2 months">2 mois</span>
+          </div>
+          <p data-en="A compiler for the HOBY language, written in C: grammar definition G = &lt;S, T, NT, RP&gt;, a lexer (<code>Data.h</code>, token list, lexer functions) and a syntax analyser that produces the syntax tree.">Compilateur pour le langage HOBY, écrit en C&nbsp;: définition de la grammaire G = &lt;S, T, NT, RP&gt;, analyseur lexical (fichier <code>Data.h</code>, liste de tokens, fonctions du lexer) et analyseur syntaxique produisant l’arbre syntaxique.</p>
+          <div class="chips">
+            <span class="chip">C</span><span class="chip">Grammaire</span><span class="chip">Lexer</span><span class="chip">Analyse syntaxique</span><span class="chip">Arbre syntaxique</span>
+          </div>
+        </article>
+
+        <article class="card rise">
+          <div class="card-top">
+            <h3 data-en="mini-C language compiler">Compilateur du langage mini-C</h3>
+            <span class="dur" data-en="10 weeks">10 semaines</span>
+          </div>
+          <p data-en="A compiler for the mini-C language, written entirely in C: grammar G = &lt;S, T, NT, RP&gt;, a lexer (<code>Data.h</code>, token list, lexer functions), then a syntax analyser that builds the tree and reports its analysis results.">Compilateur pour le langage mini-C, écrit entièrement en C&nbsp;: grammaire G = &lt;S, T, NT, RP&gt;, analyseur lexical (fichier <code>Data.h</code>, liste de tokens, fonctions du lexer), puis analyseur syntaxique avec construction de l’arbre et restitution des résultats d’analyse.</p>
+          <div class="chips">
+            <span class="chip">C</span><span class="chip">Grammaire</span><span class="chip">Lexer</span><span class="chip">Analyse syntaxique</span><span class="chip">Arbre syntaxique</span>
+          </div>
+        </article>
+
+        <article class="card rise">
+          <div class="card-top">
+            <h3 data-en="COVID-19 patient management">Gestion de patients COVID-19</h3>
+            <span class="dur" data-en="2 months">2 mois</span>
+          </div>
+          <p data-en="A COVID-19 patient management system written in C, built on dynamic data structures &mdash; linked lists.">Système de gestion de patients COVID-19 écrit en C, bâti sur des structures de données dynamiques &mdash; listes chaînées.</p>
+          <div class="chips">
+            <span class="chip">C</span><span class="chip">Listes chaînées</span><span class="chip">Structures de données</span>
+          </div>
+          <a class="card-link" href="https://github.com/BADREDDINE1999/COVID-19-patients-management" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.05-.02-2.06-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.11-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.62-5.48 5.92.43.37.81 1.1.81 2.22 0 1.61-.01 2.9-.01 3.3 0 .32.21.7.82.58A12.01 12.01 0 0 0 24 12.5C24 5.87 18.63.5 12 .5Z"/></svg>
+            <span data-en="View the code">Voir le code</span>
+          </a>
+        </article>
+
+        <article class="card rise">
+          <div class="card-top">
+            <h3 data-en="Passing a bill into law in Morocco">Élaboration et adoption d’un projet de loi au Maroc</h3>
+            <span class="dur" data-en="2 months">2 mois</span>
+          </div>
+          <p data-en="Modelling the process by which a bill is drafted and passed into law in Morocco, from initiative through to promulgation.">Modélisation du processus d’élaboration et d’adoption d’un projet de loi au Maroc, de son initiative jusqu’à sa promulgation.</p>
+          <div class="chips">
+            <span class="chip">BonitaSoft 2023.1</span><span class="chip">BPM</span><span class="chip">BPMN</span><span class="chip">Workflow</span><span class="chip">User stories</span><span class="chip">Happy Path</span>
+          </div>
+        </article>
+
+        <article class="card rise">
+          <div class="card-top">
+            <h3 data-en="Star-schema mini data warehouse">Mini data warehouse en modèle en étoile</h3>
+            <span class="dur" data-en="1 month">1 mois</span>
+          </div>
+          <p data-en="Design of a small star-schema data warehouse, together with the ETL pipelines that load its fact and dimension tables.">Conception d’un mini data warehouse suivant un modèle en étoile, et développement des pipelines ETL chargés d’alimenter les tables de faits et de dimensions.</p>
+          <div class="chips">
+            <span class="chip">Data Warehouse</span><span class="chip">Modèle en étoile</span><span class="chip">ETL</span><span class="chip">SQL</span>
+          </div>
+          <a class="card-link" href="https://github.com/BADREDDINE1999/Implementation-of-a-Data-Warehouse-for-Internet-Sales-Analysis" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.05-.02-2.06-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.11-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.62-5.48 5.92.43.37.81 1.1.81 2.22 0 1.61-.01 2.9-.01 3.3 0 .32.21.7.82.58A12.01 12.01 0 0 0 24 12.5C24 5.87 18.63.5 12 .5Z"/></svg>
+            <span data-en="View the code">Voir le code</span>
+          </a>
+        </article>
+
+        <article class="card rise">
+          <div class="card-top">
+            <h3 data-en="Blog publishing platform">Plateforme web de création de blogs</h3>
+            <span class="dur" data-en="1 month">1 mois</span>
+          </div>
+          <p data-en="A web platform for creating and publishing blogs, built in Java/JEE.">Plateforme web de création et de publication de blogs, développée en Java/JEE.</p>
+          <div class="chips">
+            <span class="chip">Java</span><span class="chip">JEE</span>
+          </div>
+        </article>
+
+        <article class="card rise">
+          <div class="card-top">
+            <h3 data-en="Data analysis mini-projects (R)">Mini-projets d’analyse de données (R)</h3>
+            <span class="dur" data-en="1 month">1 mois</span>
+          </div>
+          <p data-en="A set of data analysis mini-projects in R: simple and multiple linear regression, principal component analysis (PCA) and classification techniques.">Série de mini-projets d’analyse de données sous R&nbsp;: régression linéaire simple et multiple, analyse factorielle en composantes principales (ACP) et techniques de classification.</p>
+          <div class="chips">
+            <span class="chip">R</span><span class="chip">Régression linéaire</span><span class="chip">ACP</span><span class="chip">Classification</span>
+          </div>
+        </article>
+
+        <article class="card rise">
+          <div class="card-top">
+            <h3 data-en="Entrepreneurship &mdash; at-home dog grooming">Culture entrepreneuriale &mdash; toilettage canin à domicile</h3>
+            <span class="dur" data-en="2 months">2 mois</span>
+          </div>
+          <p data-en="A full business study for an at-home dog grooming service: the idea, market research, marketing strategy, resource assessment, cost estimation, financial viability and choice of legal structure.">Étude entrepreneuriale complète d’un service de toilettage canin à domicile&nbsp;: présentation de l’idée, étude de marché, stratégie marketing, évaluation des ressources, estimation des coûts, viabilité financière et choix du statut juridique.</p>
+          <div class="chips">
+            <span class="chip">Étude de marché</span><span class="chip">Stratégie marketing</span><span class="chip">Business plan</span><span class="chip">Viabilité financière</span>
           </div>
         </article>
 
@@ -1104,7 +1292,7 @@ html{ scroll-behavior: smooth; scroll-padding-top: 76px; }
       </div>
 
       <div class="foot">
-        <span data-en="Badreddine Housni &mdash; Full-Stack Engineer">Badreddine Housni &mdash; Ingénieur Full-Stack</span>
+        <span data-en="Badreddine Housni &mdash; Software Engineer">Badreddine Housni &mdash; Ingénieur logiciel</span>
         <span class="off" data-en="Away from the keyboard: running, football, and time with family.">Hors du code&nbsp;: la course à pied, le football, et du temps avec ma famille.</span>
       </div>
     </div>
